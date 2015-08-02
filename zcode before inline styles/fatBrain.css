@@ -1,0 +1,157 @@
+/*----- GENERAL STYLES -----*/
+
+h1, h2 {
+    font-family:"Tahoma", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    padding-bottom: 2px;
+    
+    font-size: 2.75em;
+    color: #3A87C5;
+}
+
+h2 {
+    padding-bottom: 8px;
+    
+    font-size: 1.875em;
+    color: #95CA3F;
+}
+
+h3 {
+    padding-bottom: 10px;
+    
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-style: italic;
+    color: #3d3d3d;
+}
+
+.emailCopy {
+    font-size: 1.125em;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #3d3d3d;
+
+}
+
+.sectionLabel {
+    padding-bottom: 10px;
+    
+    font-family:"Helvetica", Arial, sans-serif;
+    font-size: 1.125em;
+    font-weight: Bold;
+    font-style: italic;
+    color: #B3B3B3;
+}
+
+img {
+    background-color: #CAC9C9;
+}
+
+/*----- EVENT BLOCK -----*/
+
+#eventContainer {
+    padding: 20px 40px;
+}
+
+/*----- PRODUCT BLOCK -----*/
+
+#productContainer {
+    padding: 20px 40px 20px 0px;
+}
+
+.featuredProductHeader {
+    padding-left: 40px;
+}
+
+.productLogo {
+    padding-left: 114px;
+}
+
+.productDescription {
+    padding-top: 10px;
+    padding-right: 8px;
+}
+
+.productLinkCopy {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #3A87C5;
+}
+
+.productLinkCopy:hover {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #AABD24;
+}
+
+/*----- FOOTER -----*/
+
+#footerBlock {
+    background-color: #3A87C5;
+    border-radius: 0 0 15px 15px ;
+}
+
+.footerCopy {
+    padding: 15px;
+
+    font-family:"Tahoma", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.375em;
+    color: #FFFFFF;
+}
+
+.footerCopy a {
+    font-size: 1.125em;
+    font-weight: Bold;
+    color: #95CA3F;
+}
+
+.footerCopy a:hover {
+    color: #83B631;
+}
+
+/*----- MOBILE STYLES -----*/
+
+@media only screen and (max-width: 480px){
+				
+/*////// RESET STYLES //////*/
+				
+td[id="eventContainer"], td[id="ruleContainer"], td[id="productContainer"] {
+    padding-right:20px !important; 
+    padding-left:20px !important;
+}
+
+table[id="eventBlock"], table[id="ruleBlock"], table[id="productBlock"], table[id="footerBlock"] {
+    max-width:480px !important; 
+    width:100% !important;
+}
+				
+/*////// CLIENT-SPECIFIC STYLES //////*/
+				
+body {width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
+				
+/*////// GENERAL STYLES //////*/
+    
+h1 {font-size:2em !important;}
+
+h2 {font-size:1.5em !important;}
+    
+h3 {font-size:1.25em !important;}
+				
+img[id="heroImage"] {height:auto !important; max-width:520px !important; width:100% !important;}
+
+img[id="eventImage"] {height:auto !important; max-width:245px !important; width:100% !important;}
+
+.featuredProductHeader {
+    padding-left: 10px;
+}
+
+.productLogo {
+    padding-left: 50px;
+}
+				
+td[class="productLeftColumn"], td[class="productRightColumn"]{display:block !important; padding:0 0 10px 0 !important; width:100% !important;}
+
+td[class="footerContent"]{font-size:15px !important;}
+			}
